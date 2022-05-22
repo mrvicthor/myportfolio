@@ -1,0 +1,136 @@
+#projects {
+  background: #131419;
+  overflow: hidden;
+  padding: 3rem 2rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+#projects h2::after {
+  content: "";
+  position: relative;
+  display: block;
+  bottom: 10px;
+  left: 90px;
+  width: 70%;
+  background-color: var(--green);
+  height: 1px;
+}
+.projects__list {
+  margin-top: 4rem;
+  gap: var(--gap, 3rem);
+}
+.project__item {
+  padding: 1.5rem;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+}
+
+.project__image {
+  height: 15rem;
+  width: 100%;
+
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.project__body {
+  margin-top: 1rem;
+}
+.project__body p {
+  margin-top: 1rem;
+  /* max-width: 40ch; */
+}
+
+.project__links {
+  margin-top: 1rem;
+  gap: var(--gap, 1rem);
+}
+.btn__project_links {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+.btn__project_links > * {
+  font-size: 1.5rem;
+}
+
+.projects__more {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.view__more {
+  padding: 16px 20px;
+  border-radius: 6px;
+  border: 1px solid var(--green);
+  background: transparent;
+  color: var(--green);
+  cursor: pointer;
+}
+
+@media (min-width: 45rem) {
+  #projects {
+    padding-inline: 3rem;
+  }
+
+  #projects h2::after {
+    width: 50%;
+    left: 137px;
+    bottom: 14px;
+  }
+
+  .projects__list {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    padding-top: 5rem;
+  }
+  .projects__list > *:first-child {
+    grid-column: 1 / span 2;
+  }
+
+  .projects__list > *:nth-child(2) {
+    grid-column: 3 / span 2;
+  }
+
+  .projects__list > *:nth-child(3) {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+  }
+  .projects__list > *:nth-child(4) {
+    grid-row: 2;
+    grid-column: 3 / span 2;
+  }
+
+  .project__image {
+    height: 15rem;
+  }
+
+  .project__item {
+  }
+  .project__item:hover {
+    background-color: var(--light-slate);
+  }
+
+  .project__item:hover > .project__body h3 {
+    color: #555d50;
+  }
+
+  .project__item:hover > .project__body p {
+    color: #131419;
+  }
+  .btn__project_links:hover {
+    color: var(--green);
+  }
+
+  .view__more {
+    transition: background 250ms ease-in;
+  }
+
+  .view__more:hover {
+    background-color: var(--light-slate);
+  }
+}

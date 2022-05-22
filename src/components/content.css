@@ -1,0 +1,54 @@
+.landing__page {
+  padding: 4rem 2rem;
+  padding-top: 10rem;
+}
+
+.dev__name {
+  display: block;
+  margin-top: 0.8rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.contact__btn {
+  margin-block: 3rem;
+  padding: 16px 25px;
+  border: 1px solid var(--green);
+  background: transparent;
+  border-radius: 4px;
+  color: var(--green);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+@media (min-width: 45em) {
+  .landing__page {
+    padding-inline: 3rem;
+  }
+  .description {
+    max-width: 45ch;
+  }
+  .landing__page > *:nth-child(2) {
+    letter-spacing: 5px;
+  }
+  .landing__page > *:nth-child(3) {
+    line-height: 2.2rem;
+  }
+
+  .dev__name {
+    font-size: 5rem;
+  }
+  .web {
+    font-size: 5rem;
+  }
+  .contact__btn {
+    font-size: 1.2rem;
+  }
+  .contact__btn:hover {
+    background-color: var(--green);
+    color: var(--clr-white);
+  }
+}

@@ -1,0 +1,70 @@
+#form {
+  padding: 3rem 4rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.form {
+  margin-top: 3rem;
+  flex-direction: column;
+  gap: var(--gap, 1rem);
+}
+#form h2 {
+  margin-block: 1rem;
+  text-transform: capitalize;
+}
+
+input[type="text"],
+input[type="email"] {
+  background: transparent;
+  padding: 16px 0;
+  width: 100%;
+  color: var(--clr-light-gray);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--clr-white);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  background: transparent;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding-block: 12px;
+  padding-right: 20px;
+  background: transparent;
+  color: var(--clr-light-gray);
+  border: none;
+  resize: none;
+  outline: none;
+  border-bottom: 2px solid var(--clr-white);
+}
+
+input[type="submit"] {
+  align-self: center;
+  padding: 12px 20px;
+  color: var(--green);
+  background: transparent;
+  border: 1px solid var(--green);
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: var(--green);
+  color: var(--clr-white);
+}
+
+@media (min-width: 45rem) {
+  #form {
+    margin-inline: auto;
+    max-width: 45rem;
+  }
+  .form {
+    justify-content: center;
+  }
+}
