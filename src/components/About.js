@@ -38,8 +38,10 @@ const About = () => {
           <li>CSS3</li>
           <li>JavaScript (ES6+)</li>
           <li>React</li>
-          <li>SQL</li>
+          <li>TypeScript</li>
           <li>Node.js</li>
+          <li>SQL</li>
+          <li>Redux</li>
         </ul>
         <div data-aos="fade-down" className="about__image">
           <img src={Victor} alt="Victor Eleanya" className="about__image_img" />
