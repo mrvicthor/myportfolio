@@ -1,4 +1,5 @@
 import Shopping from "./assets/images/shopping.jpg";
+import Restworld from "./assets/images/restworld.jpg";
 import Space from "./assets/images/space.png";
 import Netflix from "./assets/images/netflix.png";
 import Todo from "./assets/images/todo_App.png";
@@ -22,11 +23,11 @@ const data = [
   },
   {
     id: 3,
-    title: "E-commerce App",
-    imgUrl: Shopping,
-    description: "An e-commerce app where customers can purchase items online.",
-    github: "https://github.com/mrvicthor/e-commerce-app",
-    website: "https://e-commerce-app-woad-eight.vercel.app/",
+    title: "REST Countries API",
+    imgUrl: Restworld,
+    description: "Responsive web app that displays all countries from an API.",
+    github: "https://github.com/mrvicthor/rest-countries-app",
+    website: "https://rest-countries-app-snowy.vercel.app/",
   },
   {
     id: 4,
