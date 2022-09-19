@@ -102,3 +102,13 @@ select {
   font: inherit;
 }
 
+.progress-bar{
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--clr-tomato);
+  transform-origin: 0%;
+}

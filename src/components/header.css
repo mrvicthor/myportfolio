@@ -4,14 +4,17 @@
   top: 0;
   left: 0;
   color: var(--green);
-  align-items: center;
   padding-inline: 2rem;
   height: 72px;
   overflow: hidden;
-  justify-content: space-between;
   z-index: 100;
 }
 
+.nav > div {
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
 .nav-bg {
   background-color: #0c8c8c;
 }

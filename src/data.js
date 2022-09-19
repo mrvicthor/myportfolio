@@ -28,7 +28,6 @@ const data = [
     github: "https://github.com/mrvicthor/netflix-app",
     website: "https://netflix-app-nu.vercel.app/",
   },
-
   {
     id: 4,
     title: "Todo App",
